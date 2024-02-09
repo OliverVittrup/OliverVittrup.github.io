@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/dyw1lle.css">
+</head>
+<body id="upcomingbody">
+    <header>
+        <a id="mobilemenubutton" href="burgermenu.html"><img src="images/burgermenu.svg.png" alt="Burger Menu"></a>
+        <img id="logo" src="images/logo.png" alt="Oliver logo" onclick="window.location.href = 'index.html';">
+        <nav id="desktopmenu">
+            <div id="socialemedier">
+                <a href="https://www.facebook.com/oliver.vittrup.7/"><p class="socials">fb</p></a>
+                <a href="https://www.linkedin.com/in/oliver-emil-vittrup-812868231/"><p class="socials">in</p></a>
+                <a href="https://www.instagram.com/oliver_vittrup/"><p class="socials">ig</p></a>
+            </div>
+                <button class="btn" onclick="window.location.href = 'ommig.html';">Om mig</button>
+                <button class="btn" onclick="window.location.href = 'index.html';"> Mit arbejde</button>
+        </nav>
+    </header>
+    <h1 id="upcomingprojekt">Upcoming</h1>
+    <p id="tekst-til-upcoming">Upcoming-projektet var et eksamensprojekt på 2. semester. Formålet var at skabe en visuel identitet til Upcoming, samt at vise kunstnere frem på sitet. Upcoming er et virkeligt projekt, som er skabt af Film Kollektivet, hvor vi stod for at skabe den visuelle identitet og arbejde i tæt samarbejde med dem. </p>
+    <img src="images/upcoming1.png" alt="upcoming" id="upcoming-forside">
+    <h1 id="minrolle">Min rolle</h1>
+    <p id="minrolletekst">I dette projekt var alle med inde over det hele. Dog havde vi hver især enkelte punkter vi gik mere i dybden med. <br><br> Wireframes, mockups og klikbar prototype i Adobe XD, interviews af kunstnerne og programmering var bl.a. noget af det der var mit fokus.</p>
+    <img src="images/wireframe.png" alt="wireframe" id="wireframe">
+    <img src="images/mockup.png" alt="wireframe" id="mockup">
+    <h1 id="interviews">Interview af kunstere</h1>
+    <p id="interviewtekst">Til vores interview af kunstnerne lavede vi en video, så de besøgende på sitet fik et bedre indblik i hvad det vil sige at være kunstner. <br><br> Et af formålene med sitet var at vise kunstnere frem på sitet og give et indblik i hvem de var som person. Her brugte vi en interview-video til at opnå dette.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3GpH-mAuK3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <a href="index.html"><button id="gåtilbage">Gå tilbage</button></a>
+    <!--JAVASCRIPT-->
+    <footer>
+        <h1 id="footer">Tøv ikke med at kontakte mig!</h1>
+
+        <div id="icons">
+            <img src="images/phone.png" alt="telefon" id="phone">
+            <img src="images/mail.png" alt="mail" id="mail">
+            <img src="images/linkedin.png" alt="linkedin" id="linkedin">
+        </div>
+        <div id="info">
+            <p id="nummer">+45 25 54 00 46</p>
+            <p id="email">oliveremilvittrup@outlook.com</p>
+            <p id="navn">Oliver Emil Vittrup</p>
+        </div>
+
+    </footer>
+    <script>
+        var imgArray = [
+        'images/upcoming1.png',
+        'images/upcoming3.png',
+        'images/upcoming6.png',
+        'images/upcoming4.png',
+        'images/upcoming5.png',
+        ];
+        var curIndex = 0;
+        var imgDuration = 5000;
+
+    function slideShow() {
+        document.getElementById('upcoming-forside').src = imgArray[curIndex];
+        curIndex++;
+        if (curIndex == imgArray.length) { curIndex = 0; }
+        setTimeout("slideShow()", imgDuration);
+        }
+        slideShow();
+    </script>
+</body>
+</html>

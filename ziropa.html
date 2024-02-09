@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/dyw1lle.css">
+</head>
+<body id="ziropabody">
+    <header>
+        <a id="mobilemenubutton" href="burgermenu.html"><img src="images/burgermenu.svg.png" alt="Burger Menu"></a>
+        <img id="logo" src="images/logo.png" alt="Oliver logo" onclick="window.location.href = 'index.html';">
+        <nav id="desktopmenu">
+            <div id="socialemedier">
+                <a href="https://www.facebook.com/oliver.vittrup.7/"><p class="socials">fb</p></a>
+                <a href="https://www.linkedin.com/in/oliver-emil-vittrup-812868231/"><p class="socials">in</p></a>
+                <a href="https://www.instagram.com/oliver_vittrup/"><p class="socials">ig</p></a>
+            </div>
+                <button class="btn" onclick="window.location.href = 'ommig.html';">Om mig</button>
+                <button class="btn" onclick="window.location.href = 'index.html';"> Mit arbejde</button>
+        </nav>
+    </header>
+    <h1 id="ziropaprojekt">Ziropa</h1>
+    <p id="tekst-til-ziropa">Ziropa var et webdokumentars-projekt, hvor jeg lærte at lave visuel storytelling. Formålet var at bruge grafiske virkemidler som f.eks. billeder, video, lyd og animation til at fortælle en historie. </p>
+    <video id="ziropa1">
+        <source src="video/ziropa1.mp4" type="video/mp4">
+    </video>
+    <h1 id="minrolle3">Min rolle</h1>
+    <video id="ziropa2">
+        <source src="video/ziropa2.mp4" type="video/mp4">
+    </video>
+    <p id="minrolletekst3">I dette projekt var mit fokus på programmeringen. JavaScript var en stor del af det dynamiske og interaktive design som skulle fremvises i webdokumentaren. I projektet lærte jeg meget om JavaScript og hvordan det kan bruges til forskellige funktioner. <br> <br> Med grafiske virkemidler og funktioner har jeg i dette projekt lært hvordan man kan fortælle og guide den besøgende igennem et site, uden faktisk at skrive så meget tekst ned, men ved at fortælle historien visuelt.</p>
+    <img src="images/cinemagraphic.gif" alt="gif" id="gif">
+    <a href="index.html"><button id="gåtilbage3">Gå tilbage</button></a>
+    
+
+    <footer>
+        <h1 id="footer">Tøv ikke med at kontakte mig!</h1>
+
+        <div id="icons">
+            <img src="images/phone.png" alt="telefon" id="phone">
+            <img src="images/mail.png" alt="mail" id="mail">
+            <img src="images/linkedin.png" alt="linkedin" id="linkedin">
+        </div>
+        <div id="info">
+            <p id="nummer">+45 25 54 00 46</p>
+            <p id="email">oliveremilvittrup@outlook.com</p>
+            <p id="navn">Oliver Emil Vittrup</p>
+        </div>
+
+    </footer>
+
+    <script>
+
+window.onscroll = function(){
+    var interview = document.getElementById("ziropa1");
+    var produktion = document.getElementById("ziropa2");
+
+    if (interview.getBoundingClientRect().bottom < 250 || interview.getBoundingClientRect().top > 250)
+        interview.pause();
+        else
+        interview.play();
+    
+    if (produktion.getBoundingClientRect().bottom < 250 || produktion.getBoundingClientRect().top > 250)
+        produktion.pause();
+        else
+        produktion.play();
+};
+    </script>
+</body>

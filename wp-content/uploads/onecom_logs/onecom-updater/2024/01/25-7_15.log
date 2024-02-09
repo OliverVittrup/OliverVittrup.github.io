@@ -1,0 +1,14 @@
+25/01/2024, 07:15:24 ::  [INFO] Initiating system update
+25/01/2024, 07:15:25 ::  [INFO] Site detected as broken, disabling visual testing!
+25/01/2024, 07:15:25 ::  [INFO] Checking if installation is valid
+25/01/2024, 07:15:25 ::  [INFO] Valid installation, proceeding with updates
+25/01/2024, 07:15:25 ::  [INFO] Initiating WP core update
+25/01/2024, 07:15:25 ::  [INFO] No desired WP core update present!
+25/01/2024, 07:15:25 ::  [INFO] WP Core status true
+25/01/2024, 07:15:25 ::  [INFO] WP core updates finished, proceeding with plugins' update
+25/01/2024, 07:15:25 ::  [INFO] Initiating plugin update
+25/01/2024, 07:15:25 ::  [INFO] Plugins update completed
+25/01/2024, 07:15:25 ::  [INFO] Initiating theme update
+25/01/2024, 07:15:25 ::  [INFO] Themes update completed
+25/01/2024, 07:15:25 ::  [INFO] Updates for www.oliveremil.dk completed. Backup can be found in ./onecom-updater-backup/'
+25/01/2024, 07:15:25 ::  [INFO] Cleaning up, transferring saving available screenshots to webspace

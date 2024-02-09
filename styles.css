@@ -1,0 +1,1188 @@
+html,body
+{
+	max-width: 1920px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* --------HEADER-------- */
+
+header{
+
+max-width:100%;
+background-color: transparent;
+z-index: -1;
+}
+#logo{
+position: absolute;
+left: 4%;
+top: 1%;
+max-width: 100px;
+height: auto;
+}
+#desktopmenu{
+display: flex;
+position: relative;
+left: 1%;
+gap: 50px;
+}
+#socialemedier{
+display: flex;
+gap: 40px;
+position: absolute;
+top: 4%;
+left: 37%;
+z-index: 2;
+}
+nav > button{
+margin-top: 20px;
+
+color: black;
+padding: 10px;
+border: none;
+letter-spacing: 1pt;
+text-decoration: none;
+font-family: Helvetica;
+font-weight: bold;
+z-index: 2;
+}
+.btn {
+background-color: transparent;
+color: #353535;
+padding: 10px;
+font-size: 14pt;
+border: none;
+letter-spacing: 1pt;
+transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+position: relative;
+left: 72%;
+}
+.btn:hover {
+box-shadow: inset 230px 0 0 0 #D2D7DF;
+}
+
+/* --------BURGERMENU-------- */
+#burgermenubody{
+background-color: white;
+}  
+
+#burgermenu{
+gap: 10px;
+	
+display:flex;
+flex-direction: column;
+align-items: center;
+	
+padding: 20%;
+}
+	  
+.burgermenunavikon{
+width: 20px;
+height: 20px;
+}
+	  
+#burgermenuexit > img{
+width: 20px;
+height: 20px;
+padding: 6%;
+}
+	   
+#mobilemenubutton > img{
+width: 30px;
+height: 30px;
+position: relative;
+left: 2%;
+}
+
+
+
+/* --------HERO-SECTION-------- */
+#hero{
+display: flex;
+justify-content: center;
+position:absolute;
+top:0%;
+        
+width: 100%;
+height: 100%;
+background-image:url("images/hero2.png");
+background-size: cover;
+background-repeat:no-repeat;
+
+    
+animation: fadeIn;
+animation-duration: 3s;
+animation-delay: 0s;
+}
+
+
+/* --------HVEM ER JEG?-------- */
+
+.fade-in /*teksten til portræt*/{
+margin-left:5%;
+margin-top: 50%;
+padding-top: 50px;
+width: 800px;
+opacity: 0;
+visibility: hidden;
+transition: opacity 4s ease;
+z-index: 3;
+}
+#lærmere{
+position: absolute;
+left: 10%;
+margin-top: 20px;
+font-family: helvetica;
+color: #353535;
+letter-spacing: 1pt;
+transition: all 0.5s;
+font-size: 15px;
+padding: 1ch 2ch;
+background-color: white;
+border-radius: 2px;
+border: none;
+box-shadow: 2px 2px 0px hsl(0, 0%, 90%),
+		  4px 4px 0px hsl(0, 0%, 80%),
+		  6px 6px 0px hsl(0, 0%, 70%),
+		  8px 8px 0px hsl(0, 0%, 60%),
+		  10px 10px 0px hsl(0, 0%, 50%),
+		  12px 12px 0px hsl(0, 0%, 40%),
+		  14px 14px 0px hsl(0, 0%, 30%),
+		  16px 16px 0px hsl(0, 0%, 20%),
+		  18px 18px 0px hsl(0, 0%, 10%);
+}
+	  
+#lærmere:hover {
+background-color: hsl(0, 0%, 50%);
+color: #fff;
+box-shadow: none;
+}
+
+.slide-in /*portrætbillede*/{
+transform: translateX(100%);
+transition: transform 1s ease;
+position: absolute;
+margin-left: 42%;
+top: 110%;
+z-index: -1;
+max-width: 100%;
+}
+
+
+/* --------MINE PROJEKTER-------- */
+.projekter{
+display: flex;
+transform: translateX(100%);
+transition: transform 1s ease;
+}
+.projekter2{
+display: flex;
+transform: translateX(-100%);
+transition: transform 1s ease;
+margin-bottom: 100px;
+}
+#upcoming{
+max-width: 80%;
+margin-top: 40px;
+margin-left: 70px;
+}
+#upcoming:hover{
+opacity: 0.6;
+background-color: white;
+transition: 0.5s ease;
+
+}
+#upcomingsektion{
+max-width: 50%;
+display: flex;
+justify-content: center;
+}
+
+#nabokiosk{
+max-width: 80%;
+margin-top: 40px;
+margin-left: 70px;
+}
+#nabokiosk:hover{
+opacity: 0.6;
+background-color: white;
+transition: 0.5s ease;
+}
+
+#nabokiosksektion{
+max-width: 50%;
+display: flex;
+justify-content: center;
+}
+
+#webdok{
+max-width: 80%;
+margin-top: 40px;
+margin-left: 70px;
+}
+#webdok:hover{
+opacity: 0.6;
+background-color: white;
+transition: 0.5s ease;
+}
+#webdoksektion{
+max-width: 50%;
+display: flex;
+justify-content: center;
+}
+
+#dp{
+max-width: 80%;
+margin-top:40px;
+margin-left: 70px;
+}
+#dp:hover{
+transition: 0.5s ease;
+opacity: 0.6;
+background-color: white;
+}
+#danskpilsnersektion{
+max-width: 50%;
+display: flex;
+justify-content: center;
+}
+
+/*Tidligere erfaring*/
+#kortoverskrift{
+	text-align: center;
+	opacity: 0;
+visibility: hidden;
+transition: opacity 4s ease;
+}
+#kortunderoverskrift{
+	text-align: center;
+	color:#8a897c;
+	opacity: 0;
+visibility: hidden;
+transition: opacity 4s ease;
+}
+#kort{
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	opacity: 0;
+visibility: hidden;
+transition: opacity 4s ease;
+}
+.card {
+	width: 220px;
+	height: 254px;
+	border-radius: 10px;
+	background: #f5f5f5;
+	position: relative;
+	padding: 1.8rem;
+	border: 2px solid #c3c6ce;
+	transition: 0.5s ease-out;
+	overflow: visible;
+   }
+   
+   .card-details {
+	font-family: helvetica;
+	color: #353535;
+	letter-spacing: 1pt;
+	line-height: 20pt;
+	height: 100%;
+	gap: .5em;
+	display: grid;
+	place-content: center;
+   }
+   
+   .text-body {
+	color: rgb(134, 134, 134);
+   }
+   
+   /*Text*/
+   .text-title {
+	font-size: 1.5em;
+	font-weight: bold;
+   }
+   
+   /*Hover*/
+   .card:hover {
+	border-color: #8a897c;
+	box-shadow: 0 4px 29px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+   .card:hover .card-button {
+	transform: translate(-50%, 50%);
+	opacity: 1;
+   }
+/* --------FOOTER-------- */
+footer{
+background-color:#D2D7DF;
+height: 300px;
+}
+
+#info{
+display: flex;
+margin-top: 10px;
+cursor: pointer;
+}
+#nummer{
+margin-left:280px;
+margin-right: 180px;
+cursor: pointer;
+}
+#navn{
+margin-left: 170px;
+cursor: pointer;
+}
+#icons{
+display: flex;
+justify-content: space-evenly;
+margin-top: 70px;
+cursor: pointer;
+}
+#phone{
+height: 40px;
+width: 40px;
+}
+#mail{
+height: 40px;
+width: 40px;
+}
+#linkedin{
+height: 40px;
+width: 40px;
+}
+
+/* --------OM MIG EKSTERN HTML SIDE-------- */
+#ommigbody{
+overflow-x: hidden;
+}
+#hvemerjeg{
+animation: fadeIn;
+animation-duration: 3s;
+animation-delay: 0s;
+}
+#ommigimg{
+position: relative;
+left: 4%;
+top: 20%;
+width: 40%;
+}
+#olivertekst{
+position: absolute;
+left: 45%;
+top: 25%;
+font-family: helvetica;
+color: #353535;
+width: 550px;
+letter-spacing: 1pt;
+line-height: 25pt;
+}
+
+#mineinteresser{
+height: 1600px;
+background-color: #353535;
+opacity: 0;
+visibility: hidden;
+transition: opacity 4s ease;
+}
+#mineinteresser > h1{
+display: flex;
+justify-content: center;
+color: #D2D7DF;
+padding-top: 50px;
+z-index: 3;
+}
+#programmer{
+position: relative;
+top: 5%;
+left: 3%;
+}
+#programmertekst{
+font-family: helvetica;
+color: #D2D7DF;
+width: 550px;
+letter-spacing: 1pt;
+line-height: 25pt;
+position: relative;
+left: 3%;
+top: 7%;
+}
+#blenderimg{
+width: 50%;
+height: auto;
+position: relative;
+left: 45%;
+bottom: 17%;
+}
+#pil{
+position: relative;
+right: 6%;
+bottom: 5.5%;
+opacity: 0;
+visibility: hidden;
+transition: opacity 4s ease;
+}
+#fodboldimg{
+width: 50%;
+position: relative;
+left: 3%;
+bottom: 26%;
+}
+#fodbold{
+position: relative;
+left: 58%;
+top: -1%;
+}
+#fodboldtekst{
+position: relative;
+left: 58%;
+font-family: helvetica;
+color: #D2D7DF;
+width: 550px;
+letter-spacing: 1pt;
+line-height: 25pt;
+}
+
+/* --------UPCOMING EKSTERN HTML SIDE-------- */
+body#upcomingbody{
+overflow-x: hidden;
+height: 400px;
+}
+h1#upcomingprojekt{
+font-size: 5vw;
+position: relative;
+left: 12%;
+top: 40%;
+}
+#upcoming-forside{
+width: 40%;
+position: relative;
+left: 52%;
+bottom: 30%;
+}
+#tekst-til-upcoming{
+font-family: helvetica;
+width: 400px;
+color: #353535;
+letter-spacing: 1pt;
+line-height: 25pt;
+position: relative;
+left: 12%;
+top: 40%;
+}
+#minrolle{
+font-size: 5vw;
+position: relative;
+left: 12%;
+top: 30%;
+}
+#minrolletekst{
+	font-family: helvetica;
+	width: 400px;
+	color: #353535;
+	letter-spacing: 1pt;
+	line-height: 25pt;
+	position: relative;
+	left: 12%;
+	top: 30%;
+}
+#wireframe{
+position: relative;
+bottom: 95%;
+left: 52%;
+width: 20%;
+}
+#mockup{
+position: relative;
+bottom: 95%;
+left: 54%;
+width: 20%;
+}
+#interviews{
+font-size: 5vw;
+display: flex;
+justify-content: center;
+position: relative;
+bottom: 82%;
+}
+#interviewtekst{
+	font-family: helvetica;
+	width: 400px;
+	color: #353535;
+	letter-spacing: 1pt;
+	line-height: 25pt;
+	position: relative;
+	left: 58%;
+	bottom: 70%;
+}
+iframe{
+	position: relative;
+	left: 12%;
+	bottom: 140%;
+}
+#gåtilbage{
+position: relative;
+left: 5%;
+bottom: 50%;
+margin-top: 20px;
+font-family: helvetica;
+color: #353535;
+letter-spacing: 1pt;
+transition: all 0.5s;
+font-size: 15px;
+padding: 2ch 3ch;
+background-color: white;
+border-radius: 2px;
+border: none;
+box-shadow: 2px 2px 0px hsl(0, 0%, 90%),
+		  4px 4px 0px hsl(0, 0%, 80%),
+		  6px 6px 0px hsl(0, 0%, 70%),
+		  8px 8px 0px hsl(0, 0%, 60%),
+		  10px 10px 0px hsl(0, 0%, 50%),
+		  12px 12px 0px hsl(0, 0%, 40%),
+		  14px 14px 0px hsl(0, 0%, 30%),
+		  16px 16px 0px hsl(0, 0%, 20%),
+		  18px 18px 0px hsl(0, 0%, 10%);
+}
+#gåtilbage:hover {
+background-color: hsl(0, 0%, 50%);
+color: #fff;
+box-shadow: none;
+}
+
+/* --------NABO KIOSK EKSTERN HTML SIDE-------- */
+body#nabokioskbody{
+overflow-x: hidden;
+}
+h1#nabokioskprojekt{
+font-size: 5vw;
+position: relative;
+left: 12%;
+top: 15%;
+}
+#tekst-til-nabokiosk{
+font-family: helvetica;
+width: 400px;
+color: #353535;
+letter-spacing: 1pt;
+line-height: 25pt;
+position: relative;
+left: 12%;
+top: 15%;
+}
+#nabokioskmobil{
+position: relative;
+bottom: 30%;
+left: 2%;
+width: 30%;
+}
+#nabokiosk-forside{
+width: 40%;
+position: relative;
+left: 55%;
+bottom: 60%;
+}
+#minrolle2{
+font-size: 5vw;
+position: relative;
+left: 12%;
+bottom: 20%;
+}
+#minrolletekst2{
+font-family: helvetica;
+width: 400px;
+color: #353535;
+letter-spacing: 1pt;
+line-height: 25pt;
+position: relative;
+left: 12%;
+bottom: 15%;
+}
+#vpcanvas{
+position: relative;
+bottom: 90%;
+left: 50%;
+width: 50%;
+}
+#grid{
+position: relative;
+bottom: 70%;
+right: 10%;
+width: 40%;
+}
+#gåtilbage2{
+	position: relative;
+	right: 47%;
+	bottom: 50%;
+	margin-top: 20px;
+	font-family: helvetica;
+	color: #353535;
+	letter-spacing: 1pt;
+	transition: all 0.5s;
+	font-size: 15px;
+	padding: 2ch 3ch;
+	background-color: white;
+	border-radius: 2px;
+	border: none;
+	box-shadow: 2px 2px 0px hsl(0, 0%, 90%),
+			  4px 4px 0px hsl(0, 0%, 80%),
+			  6px 6px 0px hsl(0, 0%, 70%),
+			  8px 8px 0px hsl(0, 0%, 60%),
+			  10px 10px 0px hsl(0, 0%, 50%),
+			  12px 12px 0px hsl(0, 0%, 40%),
+			  14px 14px 0px hsl(0, 0%, 30%),
+			  16px 16px 0px hsl(0, 0%, 20%),
+			  18px 18px 0px hsl(0, 0%, 10%);
+	}
+	#gåtilbage2:hover {
+	background-color: hsl(0, 0%, 50%);
+	color: #fff;
+	box-shadow: none;
+	}
+/* --------KEYFRAMES-------- */
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes fadeInDown {
+	from {
+		opacity: 1;
+		transform: translate3d(0, -50%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+/* --------ZIROPA EKSTERN HTML SIDE-------- */
+body#ziropabody{
+overflow-x: hidden;
+}
+h1#ziropaprojekt{
+font-size: 5vw;
+position: relative;
+left: 12%;
+top: 15%;
+}
+#tekst-til-ziropa{
+font-family: helvetica;
+width: 400px;
+color: #353535;
+letter-spacing: 1pt;
+line-height: 25pt;
+position: relative;
+left: 12%;
+top: 15%;
+}
+#ziropa1{
+width: 40%;
+position: relative;
+left: 47%;
+bottom: 22%;
+box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+#minrolle3{
+font-size: 5vw;
+position: relative;
+left: 12%;
+bottom: 5%;
+}
+#minrolletekst3{
+font-family: helvetica;
+width: 400px;
+color: #353535;
+letter-spacing: 1pt;
+line-height: 25pt;
+position: relative;
+left: 12%;
+bottom: 45%;
+}
+#ziropa2{
+width: 40%;
+position: relative;
+left: 47%;
+bottom: 20%;
+box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+#gif{
+position: relative;
+width: 40%;
+left: 47%;
+bottom: 70%;
+box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+#gåtilbage3{
+	position: relative;
+	left: 3%;
+	bottom: 40%;
+	margin-top: 20px;
+	font-family: helvetica;
+	color: #353535;
+	letter-spacing: 1pt;
+	transition: all 0.5s;
+	font-size: 15px;
+	padding: 2ch 3ch;
+	background-color: white;
+	border-radius: 2px;
+	border: none;
+	box-shadow: 2px 2px 0px hsl(0, 0%, 90%),
+			  4px 4px 0px hsl(0, 0%, 80%),
+			  6px 6px 0px hsl(0, 0%, 70%),
+			  8px 8px 0px hsl(0, 0%, 60%),
+			  10px 10px 0px hsl(0, 0%, 50%),
+			  12px 12px 0px hsl(0, 0%, 40%),
+			  14px 14px 0px hsl(0, 0%, 30%),
+			  16px 16px 0px hsl(0, 0%, 20%),
+			  18px 18px 0px hsl(0, 0%, 10%);
+	}
+	#gåtilbage3:hover {
+	background-color: hsl(0, 0%, 50%);
+	color: #fff;
+	box-shadow: none;
+	}
+/* --------DP EKSTERN HTML SIDE-------- */
+body#dpbody{
+overflow-x: hidden;
+}
+h1#dpprojekt{
+	font-size: 5vw;
+	position: relative;
+	left: 8%;
+	top: 15%;
+	}
+#tekst-til-dp{
+	font-family: helvetica;
+	width: 400px;
+	color: #353535;
+	letter-spacing: 1pt;
+	line-height: 25pt;
+	position: relative;
+	left: 8%;
+	top: 15%;
+	}
+#minrolle4{
+font-size: 5vw;
+position: relative;
+left: 8%;
+bottom: 12%;
+}
+#minrolletekst4{
+font-family: helvetica;
+width: 400px;
+color: #353535;
+letter-spacing: 1pt;
+line-height: 25pt;
+position: relative;
+left: 8%;
+bottom: 10%;
+}
+#dp3{
+width: 40%;
+position: relative;
+left: 52%;
+bottom:55%;
+box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+#persona{
+width: 20%;
+position: relative;
+bottom: 15%;
+box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+#styletile{
+width: 30%;
+position: relative;
+right: 2%;
+bottom: 5%;
+box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+#dplogo{
+	width: 20%;
+	position: relative;
+	left: 45%;
+	bottom: 110%;
+}
+#interviewguide{
+	width: 25%;
+	position: relative;
+	left: 50%;
+	bottom: 60%;
+	box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+#cardsorting{
+	width: 30%;
+	position: relative;
+	right: 8%;
+	bottom: 70%;
+	box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+#gåtilbage5{
+	position: relative;
+	right: 33%;
+	bottom: 40%;
+	margin-top: 20px;
+	font-family: helvetica;
+	color: #353535;
+	letter-spacing: 1pt;
+	transition: all 0.5s;
+	font-size: 15px;
+	padding: 2ch 3ch;
+	background-color: white;
+	border-radius: 2px;
+	border: none;
+	box-shadow: 2px 2px 0px hsl(0, 0%, 90%),
+			  4px 4px 0px hsl(0, 0%, 80%),
+			  6px 6px 0px hsl(0, 0%, 70%),
+			  8px 8px 0px hsl(0, 0%, 60%),
+			  10px 10px 0px hsl(0, 0%, 50%),
+			  12px 12px 0px hsl(0, 0%, 40%),
+			  14px 14px 0px hsl(0, 0%, 30%),
+			  16px 16px 0px hsl(0, 0%, 20%),
+			  18px 18px 0px hsl(0, 0%, 10%);
+	}
+	#gåtilbage5:hover {
+	background-color: hsl(0, 0%, 50%);
+	color: #fff;
+	box-shadow: none;
+	}
+/* --------FONTS-------- */
+.socials{
+font-family: helvetica;
+font-weight: bolder;
+font-size: 12pt;
+color: #353535;
+position: relative;
+top: 25%;
+}
+.socials:hover{
+color: #D2D7DF;
+}
+a{
+text-decoration: none;
+color:none; 
+}
+h1{
+font-family: "rig-solid-bold-outline", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 5.5vw;
+color:#8a897c;
+margin-bottom: 30px;
+}
+p#about{
+font-family: helvetica;
+color: #353535;
+width: 400px;
+letter-spacing: 1pt;
+line-height: 25pt;
+}
+#projekter{
+display: flex;
+justify-content: center;
+position: relative;
+margin-top: 300px;
+
+opacity: 0;
+visibility: hidden;
+transition: opacity 4s ease;
+}
+
+h1#footer{
+font-size: 2.5vw;
+color: #D2D7DF;
+display: flex;
+justify-content: center;
+padding-top: 40px;
+}
+h2{
+	font-family: "rig-solid-bold-outline", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 2vw;
+	color:#D2D7DF;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+
+/* --------FONTS-FOOTER-------- */
+h1#footer{
+	color:#353535;
+}
+#nummer{
+font-family: helvetica;
+color: #353535;
+letter-spacing: 1pt;
+}
+#email{
+font-family: helvetica;
+color: #353535;
+letter-spacing: 1pt;
+}
+#navn{
+font-family: helvetica;
+color: #353535;
+letter-spacing: 1pt;
+}
+
+
+
+/* --------RESPONSIVT-------- */
+
+@media only screen and (min-width:650px){
+	/* header */
+   #mobilemenubutton{
+	display: none;
+	}
+  }
+  
+
+@media only screen and (max-width:600px){
+	/* HEADER */
+	#desktopmenu{
+	display: none;
+	}
+	img#logo {
+	position: fixed;
+	top: 1%;
+	left: 15%;
+	}
+	.btn{
+	left: 0%;
+	}
+	/*MAIN CONTENT*/
+		
+	body{
+	overflow-x: hidden;
+	flex-direction: column;
+	max-width: 100%;
+	}
+	section#hero{
+	background-image:url("images/closeportræt.png");
+	height: 50%;
+	background-position: center;
+	z-index:-1;
+	}
+	img#logo {
+	position: absolute;
+	z-index: 5;
+	}
+	.fade-in{
+		margin-left: 30px;
+		margin-top: 0px;
+	}
+	.slide-in{
+		max-width: 40%;
+		margin-left: 0px;
+		position: relative;
+		margin-top: 370px;
+	}
+	#kort{
+		flex-direction: column;
+		align-items: center;
+	}
+	/*FOOTER*/
+	h1#footer{
+		font-size: 15pt;
+	}
+	footer{
+		height: 200px;
+	}
+	#icons{
+		margin-top: 30px;
+		display: flex;
+		justify-content: space-around;
+	}
+	#info{
+		display: none;
+	}
+	/*Projekter*/
+	#upcoming{
+		margin-left: 20px;
+	}
+	#nabokiosk{
+		margin-left: 20px;
+	}
+	#webdok{
+		margin-left: 20px;
+	}
+	#dp{
+		margin-left: 20px;
+	}
+
+	/*OM MIG SIDE*/
+	#olivertekst{
+	display: flex;
+	display: inline-block;
+	max-width: 400px;
+	position: relative;
+	left: 5%;
+	}
+	#ommigimg{
+		margin-top: 10%;
+	}
+	#mineinteresser{
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	#programmer{
+		font-size: 15pt;
+	}
+	#programmertekst{
+		max-width: 100%;
+	}
+	#blenderimg{
+		top: 10%;
+		left: 22%;
+		max-width: 80%;
+	}
+	#pil{
+		display: none;
+	}
+	#fodbold{
+		font-size: 15pt;
+		max-width: 100%;
+		top: 15%;
+		left: 0%;
+	}
+	#fodboldtekst{
+		max-width: 100%;
+		margin-top: 55%;
+		left: 0%;
+	}
+	#fodboldimg{
+		top: 2%;
+		left: 22%;
+		max-width: 60%;
+	}
+	/*upcoming siden*/
+	#upcomingbody{
+		width: 100%;
+	}
+	#upcoming-forside{
+		width: 70%;
+		margin-top: 300px;
+		left: 14%;
+	}
+	#minrolle{
+		top: -15%;
+	}
+	#minrolletekst{
+		top: -15%;
+	}
+	#wireframe{
+		margin-top: 350px;
+		width: 30%;
+		left: 20%;
+	}
+	#mockup{
+		margin-top: 250px;
+		width: 30%;
+		left: 22%;
+	}
+	#interviews{
+		bottom:  70%;
+	}
+	#interviewtekst{
+		left: 12%;
+	}
+	iframe{
+		width: 80%;
+		bottom: 60%;
+	}
+	#gåtilbage{
+		left: 35%;
+	}
+		/*nabo kiosk siden*/
+		#nabokioskbody{
+			width: 100%;
+		}
+		#nabokiosk-forside{
+			width: 70%;
+			margin-top: 120%;
+			left: 14%;
+		}
+		#nabokioskmobil{
+			position: relative;
+			bottom: 60%;
+			left: 20%;
+			width: 50%;
+		}
+		#minrolle2{
+			bottom: 50%;
+		}
+		#minrolletekst2{
+			bottom: 50%;
+		}
+		#vpcanvas{
+			top: -50%;
+			width: 70%;
+			left: 0%;
+		}
+		#grid{
+			left: 30%;
+			width: 70%;
+			top: -60%;
+		}
+		#gåtilbage2{
+			right: 40%;
+		}
+	/*Ziropa siden*/
+	#ziropabody{
+		width: 100%;
+	}
+	#ziropa1{
+		margin-top: 65%;
+		left: 25%;
+	}
+	#minrolle3{
+		top: -10%;
+	}
+	#minrolletekst3{
+		margin-top: 35%;
+	}
+	#ziropa2{
+		top: 50%;
+		left: 5%;
+	}
+	#gif{
+		left: 55%;
+		top: -40%;
+	}
+	#gåtilbage3{
+		bottom: 20%;
+		left: -5%;
+	}
+	/*dp siden*/
+	#minrolle4{
+		margin-top: 60%;
+	}
+	#dp3{
+		top: 12%;
+	}
+	#persona{
+		top: 15%;
+		right: 20%;
+	}
+	#styletile{
+		top: 25%;
+		right: 20%;
+	}
+	#dplogo{
+	bottom: 20%;
+	width: 40%;
+	left: 25%;
+	}
+	#interviewguide{
+		top:0%;
+		left: 15%;
+	}
+	#cardsorting{
+		top: -5%;
+		right: 50%;
+	}
+}
